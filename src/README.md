@@ -34,3 +34,40 @@ Process finished with exit code 0
 
 ```
 
+##Optional
+```
+(done)In the City class, create a method to display the locations that are visitable and are not payable, sorted by their opening hour.
+(done)Create default methods in the interface Visitable, with the opening hour 09:30 and the closing hour 20:00.
+(done)Create a static method getVisitingDuration,in the interface Visitable, that returns a Duration object, representing how long a location is opened during a day.
+(done)Create the class TravelPlan. An instance of this class will contain a city and the preferences regarding the visiting order.
+(not done)Implement an efficient agorithm to determine the shortest path between two given locations, conforming to the preferences.
+
+OUTPUT
+The city and location list are: City: NewYork has the following locations: [The Location is called: Hotel, The Location is called: Museum A, The Location is called: Museum B, The Location is called: Church A, The Location is called: Church B, The Location is called: Restaurant]
+
+The natural ordering of location list given by their names is: 
+[The Location is called: Church A, The Location is called: Church B, The Location is called: Hotel, The Location is called: Museum A, The Location is called: Museum B, The Location is called: Restaurant]
+The cost map is: 
+Church A->Restaurant=10
+Church A->Church B=30
+Church B->Church A=30
+Church B->Restaurant=20
+Hotel->Museum B=50
+Hotel->Museum A=10
+Museum A->Church A=20
+Museum A->Museum B=20
+Museum A->Church B=10
+Museum B->Church A=20
+Museum B->Museum A=20
+Location Church A- opening time 10:30
+
+Location Church B- opening time 12:30
+
+Location Restaurant- opening time 15:30
+
+City: NewYork has the following locations: [The Location is called: Church A, The Location is called: Church B, The Location is called: Hotel, The Location is called: Museum A, The Location is called: Museum B, The Location is called: Restaurant]
+
+
+Process finished with exit code 0
+
+```

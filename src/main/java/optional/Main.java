@@ -78,7 +78,6 @@ public class Main {
         TravelPlan travel=new TravelPlan(city,preferences);
 
         System.out.println(travel.getVisitedCity());
-        System.out.println(travel.getLocations());
 
     }
 }
