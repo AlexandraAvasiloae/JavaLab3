@@ -26,6 +26,7 @@ public class City {
         return Objects.hash(nodes, name);
     }
 
+
     @Override
     public String toString() {
         return "City{" +
@@ -34,21 +35,44 @@ public class City {
                 '}';
     }
 
-    public List<Location> getModes() {
+    /**
+     * getter for locations nodes like in a graph
+     * @return
+     */
+    public List<Location> getNodes() {
         return nodes;
     }
 
-    public void setModes(List<Location> modes) {
+    /**
+     * setter for location nodes like in a graph
+     * @param modes
+     */
+    public void setNodes(List<Location> modes) {
         this.nodes = modes;
     }
+
+    /**
+     * getter for name
+     * @return
+     */
 
     public String getName() {
         return name;
     }
 
+    /**
+     * setter for name
+     * @param name
+     */
+
     public void setName(String name) {
         this.name = name;
     }
+
+    /**
+     * add locations to visit in the city
+     * @param node
+     */
 
     public void addLocation(Location node){
         nodes.add(node);

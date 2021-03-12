@@ -6,6 +6,10 @@ public class Church extends Location implements Visitable{
 
     private LocalTime openingTime, closingTime;
 
+    /**
+     * Constructor
+     * @param name
+     */
     public Church(String name){
         super(name);
     }
