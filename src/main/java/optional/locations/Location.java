@@ -14,18 +14,38 @@ abstract public class Location implements Comparable<Location>, Visitable {
     protected LocalTime closingTime;
 
 
-
-
+    /**
+     * constructor
+     * @param name
+     */
     public Location(String name) {
         this.name = name;
         this.openingTime=LocalTime.of(23,59,59);
     }
 
+    /**
+     * constructor
+     * @param name
+     * @param distance
+     */
     public Location(String name, Map<Location, Integer> distance) {
         this.name = name;
         this.distance = distance;
         this.openingTime=LocalTime.of(23,59,59);
     }
+
+
+    @Override
+    public int compareTo(Location o) {
+        return this.name.compareTo(o.name);
+    }
+
+    @Override
+    public String toString() {
+
+        return "The Location is called: "+name;
+    }
+
 
     public void setName(String name) {
         this.name=name;
@@ -59,19 +79,4 @@ abstract public class Location implements Comparable<Location>, Visitable {
     public Map<Location, Integer> getDist() {
         return distance;
     }
-
-
-    @Override
-    public int compareTo(Location o) {
-        return this.name.compareTo(o.name);
-    }
-
-    @Override
-    public String toString() {
-
-        return "The Location is called: "+name;
-    }
-
-
-
 }

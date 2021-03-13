@@ -4,6 +4,10 @@ public class Church extends Location {
 
     private String name;
 
+    /**
+     * constructor
+     * @param name
+     */
     public Church(String name) {
         super(name);
         this.name = name;

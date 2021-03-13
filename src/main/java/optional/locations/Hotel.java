@@ -13,6 +13,13 @@ public class Hotel extends Location implements Classifiable, Payable {
     private Pair<LocalTime,LocalTime> visitingTime;
     private double fee;
 
+    /**
+     * constructor
+     * @param name
+     * @param rank
+     * @param visitingTime
+     * @param fee
+     */
     public Hotel(String name, int rank, Pair<LocalTime, LocalTime> visitingTime, double fee) {
         super(name);
         this.name = name;
@@ -21,6 +28,10 @@ public class Hotel extends Location implements Classifiable, Payable {
         this.fee = fee;
     }
 
+    /**
+     * constructor
+     * @param name
+     */
     public Hotel(String name) {
         super(name);
         this.name = name;

@@ -12,6 +12,12 @@ public class Museum extends Location implements Payable {
     private double fee;
     private Pair<LocalTime,LocalTime> visitingTime;
 
+    /**
+     * constructor
+     * @param name
+     * @param fee
+     * @param visitingTime
+     */
     public Museum(String name,  double fee, Pair<LocalTime, LocalTime> visitingTime) {
         super(name);
         this.name = name;
@@ -19,6 +25,10 @@ public class Museum extends Location implements Payable {
         this.visitingTime = visitingTime;
     }
 
+    /**
+     * constructor
+     * @param name
+     */
     public Museum(String name) {
         super(name);
         this.name = name;

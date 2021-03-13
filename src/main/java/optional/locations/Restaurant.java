@@ -11,7 +11,12 @@ public class Restaurant extends Location implements Classifiable {
     private String name;
     private int rank;
 
-
+    /**
+     * constructor
+     * @param name
+     * @param visitingTime
+     * @param rank
+     */
     public Restaurant(String name, Pair<LocalTime, LocalTime> visitingTime, int rank) {
         super(name);
         this.visitingTime = visitingTime;
@@ -19,6 +24,10 @@ public class Restaurant extends Location implements Classifiable {
         this.rank = rank;
     }
 
+    /**
+     * constructor
+     * @param name
+     */
     public Restaurant(String name) {
         super(name);
         this.name = name;
